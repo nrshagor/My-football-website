@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@300;400&display=swap');
+/* font-family: 'Niconne', cursive;
+font-family: 'Poppins', sans-serif; */
+/* ------------------------
+common style or Utilities
+-------------------------*/
+*{
+    top:0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    padding: 0 140px;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
+}
+
+.section-title h1{
+    padding: 60px 0 50px;
+    text-align: center;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.945);
+}
+/* ------------------------
+        Header
+-------------------------*/
+.container{
+    width: 100%;
+}
+nav{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu img{
+    width: 60px;
+}
+.menu h1{
+    padding: 0 30px;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    font-family: 'Niconne', cursive;
+    transition: .9s all ease;
+}
+.menu h1:hover{
+    color: rgb(0, 119, 6);
+}
+.menu span{
+    color: rgb(0, 119, 6);
+    transition: .9s all ease;
+}
+.menu span:hover{
+    color: rgb(0, 0, 0);
+    transition: .9s all ease;
+}
+.menu{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.menu li{
+    list-style-type: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    padding: 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: .9s all ease;
+}
+.menu li a:hover{
+    background-color: rgb(0, 0, 0);
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+.button{
+padding: 10px
+
+}
+.btn{
+    border: 2px solid transparent;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    transition: all .6s ease;
+}
+.btn:hover{
+    border: 2px solid rgba(0, 0, 0, 0.959);
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.877);
+}
+.start{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title h1{
+font-size: 64px;
+color: rgb(0, 0, 0);
+font-weight: 700;
+padding-bottom:20px;
+}
+.title h1 span{
+    color:rgb(0, 119, 6);
+}
+.start-img .man{
+    width: 72%;
+    position: relative;
+    left:200px;
+}
+.start-img .ball{
+    width: 15%;
+    position: relative;
+    right: 70px;
+    transition: transform 1s ease-out;
+}
+.start-img:hover .ball{
+ 
+    transform: translate(-300px,-80px) scale(200%);
+}
+/* ------------------------
+        Players
+-------------------------*/
+.players{
+    width: 100%;
+}
+.card-body{
+    display: grid;
+    padding: 30px 120px;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    padding: 14px;
+    margin: 20px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 2px #0000007c;
+    transition: .9s all ease;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px 0px #06ac3291;
+}
+.player-img img{
+    width: 100%;
+max-height: 400px;
+display: block;
+} 
+.player-info{
+margin: 10px 0px;
+} 
+.player-info h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+.player-info p{
+    font-size: 16px;
+} 
+/* ------------------------
+        Partnership
+-------------------------*/
+.partnership{
+    background-color: #F3F1FF;
+}
+.partnership-img{
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    padding-top: 60px 50px;
+    justify-content: center;
+
+}
+
+.partnership img{
+    padding: 0 50px;
+    width:100px;
+    height:100px;
+}
+/* ------------------------
+        Blog
+-------------------------*/
+.blog{
+    width: 100%;
+}
+.blog-item{
+    display: grid;
+    padding: 0px 50px 30px;
+    grid-template-columns: repeat(3,1fr);
+}
+.blog-card{
+    margin: 10px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 2px 0px #0000007c;
+    transition: .9s all ease;
+}
+.blog-card:hover{
+    box-shadow: 0px 0px 5px 0px #00fd43c2;
+}
+.blog-img img{
+    width: 100%;
+    max-height: 200px;
+    display: block;
+}
+.blog-info{
+    padding: 20px 15px;
+    text-align: justify;
+}
+.blog-info p{
+    margin-top: 30px;
+   margin-bottom: 30px;
+}
+/* ------------------------
+        Footer
+-------------------------*/
+Footer{
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: #F3F1FF;
+}
+.footer{
+    padding: 50px 0 0;
+
+}
+.logo-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    flex-direction: row;
+}
+.logo-title img{
+    width: 90px;
+}
+.logo-title h1{
+    padding: 0 30px;
+    font-size: 72px;
+    color: rgb(0, 0, 0);
+    font-family: 'Niconne', cursive;
+    transition: .9s all ease;
+}
+.logo-title h1:hover{
+    color: rgb(0, 119, 6);
+}
+.logo-title span{
+    color: rgb(0, 119, 6);
+    transition: .9s all ease;
+}
+.logo-title:hover span{
+    color: rgb(0, 0, 0);
+}
+.icon{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.icon li{
+    padding: 0 15px;
+
+}
+
+.icon>li>a>i{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transition: .9s all ease;
+
+}
+
+.icon>li>a>i:hover{
+    background-color: rgb(4, 255, 25);
+    color: rgb(0, 0, 0);
+
+}
+Footer p{
+color: rgb(0, 0, 0);
+}
+
+/* ------------------------
+        Media
+-------------------------*/
+/* ------------------------
+        Mobile
+-------------------------*/
+@media only screen and (max-width:540px) {
+    /* header */
+    header{
+        padding: 0 12px; 
+    }
+    .btn{
+        padding: .8rem 1rem;
+    }
+    .menu img{
+        display: none;
+    }
+    .menu h1{
+        display: none;
+    }
+    .menu li a{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .start{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .title h1{
+        font-size: 36px;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+    .title .btn{
+        font-size: 16px;
+    }
+    .start-img .man{
+        width: 80%;
+        position: relative;
+    left:60px;
+    }
+    .start-img .ball{
+        width: 16%;
+        position: relative;
+        right: 20vh;
+        transition: transform 1s ease-out;
+    }
+    .start-img:hover .ball{
+        transform: translate(-100px,-90px) scale(200%);
+    }
+    /* players */
+    .card-body{
+        display: block;
+        padding: 30px 20px;
+    }
+    /* partnership */
+    .partnership img{
+        margin-left: 30px;
+        padding-left: 40px;
+        width:50px;
+        height:50px;
+    }
+    /* blog */
+    .blog-item{
+        display: block;
+        padding: 0 40px;
+    }
+    .blog-card{
+        margin-bottom: 50px;
+    }
+    /* footer */
+    .logo-title h1{
+        padding: 0 30px;
+        font-size: 42px;
+        font-family: 'Niconne', cursive;
+    }
+}
+/* ------------------------
+        Tablet
+-------------------------*/
+@media only screen and (min-width:541px) and (max-width:768px){
+    /* header */
+    header{
+        padding: 0 20px; 
+    }
+    .title h1{
+        font-size: 40px;
+        font-weight: 700;
+        padding: 10px 50px 10px;
+    }
+    .title .btn{
+        font-size: 20px;
+        margin-left:45px;
+    }
+    .start-img .man{
+        width: 80%;
+        position: relative;
+    left:60px;
+    }
+    .start-img .ball{
+        width: 16%;
+        position: relative;
+        right: 18vh;
+        transition: transform 1s ease-out;
+    }
+    .start-img:hover .ball{
+        transform: translate(-100px,-90px) scale(200%);
+    }
+    /* Player */
+    .card-body{
+        display: grid;
+        padding: 30px 60px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* partnership */
+    .partnership img{
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding-left: 100px;
+        width:50px;
+        height:50px;
+    }
+    /* blog */
+    .blog-item{
+        display: grid;
+        padding: 0px 150px 30px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog-card{
+        margin-bottom: 50px;
+    }
+}
